@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.b1195780.css","mappings":"AAAA,aACI,aAAc,CACd,iBACJ,CACA,cACI,eACJ","sources":["App.css"],"sourcesContent":[".img_project{\n    display: block;\n    text-align: center;\n}\n.text_project{\n    line-height: 2em;\n}"],"names":[],"sourceRoot":""}
