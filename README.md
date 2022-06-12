@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![GNU v3 License][license-shield]][license-url]
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/estebanvz/mainpage/">
+    <img src="https://avatars.githubusercontent.com/u/65377832?s=400&u=12c57a2350bcd69068ced71f630ca0d5559e6621&v=4)}" alt="Logo" width="80" height="80" style="border-radius:100%">
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <h3 align="center"> Personal Webpage
+</h3>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <p align="center">
+    This is a template to describe my Experience, Education, Skills, and Projects
+    <br />
+    <!-- <a href="https://github.com/estebanvz/mainpage"><strong>Explore the docs »</strong></a>
+    <br /> -->
+    <br />
+    <a href="https://estebanvz.github.io/mainpage/">View</a>
+    <!-- ·
+    <a href="https://github.com/estebanvz/mainpage/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/estebanvz/mainpage/issues">Request Feature</a> -->
+  </p>
+</div>
 
-### `npm test`
+## About me
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I am a Data Scientist with 4 years of experience solving business problems using artificial intelligence, machine learning, data visualization, and deep learning. Moreover, I love to teach and spread data science technologies. I participate actively as a data scientist instructor on online platforms and participate as speaker in conferences.
 
-### `npm run build`
+## Current job
+https://estebanvz.github.io/mainpage/#experience
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Data Scientist in Semantix:
+- Build and design Machine Learning algorithms for Image and Video Classification using OpenCV, YOLO, and Keras.
+- Edge devices configuration and developer for artificial intelligence (Raspberry pi and Nvidia Jetson).
+- Docker containers development and GCP cloud administration (Compute Engine, Cloud Storage).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Current degree
+https://estebanvz.github.io/mainpage/#education
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+UNIVERSITY OF SÃO PAULO
 
-### `npm run eject`
+PHD COMPUTER SCIENCE
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Research
+https://estebanvz.github.io/mainpage/#research
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [PAPERS](http://localhost:3000/#research)
+- [MEDIUM](https://medium.com/@esteban.wilfredo.g)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Projects
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+https://estebanvz.github.io/mainpage/#projects
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<!-- TABLE OF CONTENTS
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details> -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- LICENSE -->
+## License
 
-### Analyzing the Bundle Size
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<!-- CONTACT -->
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Esteban Vilca - [@ds_estebanvz](https://twitter.com/ds_estebanvz) - [esteban.wilfredo.g@gmail.com](mailto:esteban.wilfredo.g@gmail.com) - [LinkedIn](https://linkedin.com/in/estebanvz)
 
-### Deployment
+Project Link: [https://github.com/estebanvz/mainpage](https://github.com/estebanvz/mainpage)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/estebanvz/crypto_metrics.svg
+[contributors-url]: https://github.com/estebanvz/mainpage/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/estebanvz/crypto_metrics.svg
+[forks-url]: https://github.com/estebanvz/mainpage/network/members
+[stars-shield]: https://img.shields.io/github/stars/estebanvz/crypto_metrics.svg
+[stars-url]: https://github.com/estebanvz/mainpage/stargazers
+[issues-shield]: https://img.shields.io/github/issues/estebanvz/crypto_metrics.svg
+[issues-url]: https://github.com/estebanvz/mainpage/issues
+[license-shield]: https://img.shields.io/github/license/estebanvz/crypto_metrics.svg
+[license-url]: https://github.com/estebanvz/mainpage/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?=linkedin&colorB=888
+[linkedin-url]: https://linkedin.com/in/estebanvz
+[product-screenshot]: images/screenshot.png
