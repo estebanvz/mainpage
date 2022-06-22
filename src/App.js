@@ -2,6 +2,7 @@ import './App.css';
 import Awards from './components/Awards';
 import Education from './components/Education';
 import Experience from './components/Experience';
+import Languages from './components/Languages';
 import Objectives from './components/Objectives';
 import Projects from './components/Projects';
 import Research from './components/Research';
@@ -17,6 +18,8 @@ function App() {
         <Experience />
         <hr className="m-0" />
         <Education />
+        <hr className="m-0" />
+        <Languages />
         <hr className="m-0" />
         <section className="resume-section" id="skills">
           <div className="resume-section-content">
