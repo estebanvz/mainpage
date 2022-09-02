@@ -62,13 +62,13 @@ const Projects = () => {
                                 <h3 className="mb-0">{item.title}</h3>
                                 <div className="subheading mb-3">{item.subtitle}</div>
                                 <div className="row">
-                                    <div className="cold-xs-12" centered>
+                                    <div className="cold-xs-12">
                                         <p className="text_project">
                                             {item.describe}
                                         </p>
                                         <a href={item.url}>
 
-                                        <button type="button" class="btn btn-secondary btn-sm"> Link <i className="fas fa-link"></i></button>
+                                        <button type="button" className="btn btn-secondary btn-sm"> Link <i className="fas fa-link"></i></button>
 
                                         </a>
 
