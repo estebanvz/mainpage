@@ -3,6 +3,7 @@ import { InjectedConnector } from "@web3-react/injected-connector";
 
 const connector = new InjectedConnector({
   supportedChainIds: [
+    1,
     137, //Polygon
   ],
 });
