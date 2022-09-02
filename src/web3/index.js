@@ -104,7 +104,7 @@ const WalletData = () => {
           </>
         ) : (
           <>
-            <button type="button" onClick={activate_web3} className="btn btn-secondary btn-sm">Polygon Wallet Connect</button>
+            <button type="button" onClick={activate_web3} className="btn btn-secondary btn-sm">Polygon Crypto Wallet</button>
           </>
         )}
       </>
