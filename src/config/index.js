@@ -3,7 +3,8 @@ import { InjectedConnector } from "@web3-react/injected-connector";
 
 const connector = new InjectedConnector({
   supportedChainIds: [
-    1,
+    1, //ETH
+    56, //BNB
     137, //Polygon
   ],
 });
