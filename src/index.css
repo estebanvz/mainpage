@@ -1,3 +1,6 @@
 .wallet p {
     color: aqua;
 }
+.btn-light-wallet {
+    background-color: rgb(175, 125, 255);
+}

@@ -1,9 +1,10 @@
 import { UnsupportedChainIdError, useWeb3React } from "@web3-react/core";
 import { connector } from "../config";
-import { useCallback, useEffect, useState, useRef } from "react";
+import { useCallback, useEffect, useState } from "react";
 import useTruncatedAddress from "../hooks/useTruncatedAddress";
-
+import iconPolygon from "../assets/polygon.svg"
 const WalletData = () => {
+  const { ethereum } = window
   const [balance, setBalance] = useState(0);
   const addr = "0x2b66E19C7b75fF24F58a2337b4aA0aCd76e59f5f"
   const { active, activate, deactivate, chainId, account, error, library } =
@@ -40,13 +41,13 @@ const WalletData = () => {
     localStorage.setItem("previouslyConnected", "true");
   }
   const change_network = () => {
-    console.log("chainid " + chainId+" UNSUPPORTED "+isUnsupportedChain)
+    console.log("chainid " + chainId + " UNSUPPORTED " + isUnsupportedChain)
     if (chainId !== 137) {
-      window.ethereum.request({
+      ethereum.request({
         method: 'wallet_switchEthereumChain',
         params: [{ chainId: '0x89' }], // chainId must be in hexadecimal numbers
       }).catch(e => {
-        window.ethereum.request(
+        ethereum.request(
           {
             method: 'wallet_addEthereumChain',
             params: [{
@@ -67,7 +68,7 @@ const WalletData = () => {
   }
   const send_donation = async () => {
     //0.00868626
-    let result = await change_network()
+    await change_network()
     let gas = library.utils.toHex(3000000)
     library.eth.sendTransaction({
       from: account, to: addr, value: library.utils.toWei("1", "ether"), gas: gas,
@@ -76,70 +77,48 @@ const WalletData = () => {
   }
   return (
     <div>
-      <>
-        {active ? (chainId===137 ?
-          <>
-            <div>
-              <div>
+      {active ? (chainId === 137 ?
+        <>
+          <div>
+            <div className="btn-group" role="group" aria-label="wallet">
 
-                <button type="button" className="btn btn-light btn-sm" onClick={disconnect}>
-                  {balance} Ξ  {truncatedAddress} <i className="fa-brands fa-ethereum"></i>
-                </button>
-              </div>
-              <div className="pt-2">
-                <button type="button" className="btn btn-warning btn-sm" onClick={send_donation}>
-                  Donate 1 <strong>MATIC</strong>
-                </button>
-              </div>
-            </div>
-          </>
-          : <>
-
-            <div>
-
-              <button type="button" className="btn btn-danger btn-sm" onClick={change_network}>
-                <i className="fa-brands fa-ethereum"></i>  Wrong Network
+              <button type="button" className="btn btn-light-wallet">
+                {balance}
+              </button>
+              <button type="button" className="btn btn-light" onClick={disconnect}>
+                {truncatedAddress} <img src={iconPolygon} width="30rem" alt="polygon icon"></img>
               </button>
             </div>
-          </>
-        ) : (
-          <>
-            <button type="button" onClick={activate_web3} className="btn btn-secondary btn-sm">Polygon Crypto Wallet</button>
-          </>
-        )}
-      </>
-      {/* {active ? (
-          <Tag colorScheme="green" borderRadius="full">
-            <TagLabel>
-              <Link to="/punks">{truncatedAddress}</Link>
-            </TagLabel>
-            <Badge
-              d={{
-                base: "none",
-                md: "block",
-              }}
-              variant="solid"
-              fontSize="0.8rem"
-              ml={1}
-            >
-              ~{balance} Ξ
-            </Badge>
-            <TagCloseButton onClick={disconnect} />
-          </Tag>
-        ) : (
-          <Button
-            variant={"solid"}
-            colorScheme={"green"}
-            size={"sm"}
-            leftIcon={<AddIcon />}
-            onClick={connect}
-            disabled={isUnsupportedChain}
-          >
-            {isUnsupportedChain ? "Red no soportada" : "Conectar wallet"}
-          </Button>
-        )} */}
-    </div>
+            <div className="pt-2">
+              <button type="button" className="btn btn-warning active" onClick={send_donation}>
+                Donate 1 <strong>MATIC</strong>
+              </button>
+            </div>
+          </div>
+        </>
+        : <>
+
+          <div>
+
+            <button type="button" className="btn btn-danger" onClick={change_network}>
+              <i className="fa-brands fa-ethereum"></i>  Wrong Network
+            </button>
+          </div>
+        </>
+      ) : (
+        ethereum ?
+          (
+            <button type="button" onClick={activate_web3} className="btn btn-secondary" > Polygon Crypto Wallet</button>
+
+          ) : (
+            <a href="https://metamask.io/">
+              <button type="button" className="btn btn-danger"> <i className="fa-solid fa-circle-exclamation"></i> Install Metamask </button>
+            </a>
+
+          )
+
+      )}
+    </div >
   );
 };
-
 export default WalletData;

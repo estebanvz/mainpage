@@ -12,6 +12,8 @@ const Projects = () => {
             img: "assets/img/telegram.gif",
             url: "https://t.me/thalia_trading_bot",
             date: "-> Link <-",
+            maintenance: true,
+            maintenance_message: "Since Heroku changed their policy this bot is under maintenance."
         },
         {
             title: "Optimizer Brazilian Stock Portfolio",
@@ -66,11 +68,24 @@ const Projects = () => {
                                         <p className="text_project">
                                             {item.describe}
                                         </p>
-                                        <a href={item.url}>
+                                        {item.maintenance ? (
+                                            <>
+                                                <div className="alert alert-danger d-flex align-items-center" role="alert">
+                                                    <i className="fa-solid fa-circle-exclamation"></i>
+                                                    <div className="ms-2">
+                                                        {item.maintenance_message}
+                                                    </div>
+                                                </div>
+                                                <button type="button" className="btn btn-danger btn-sm"> Maintenance <i className="fas fa-link-slash"></i></button>
+                                            </>
 
-                                        <button type="button" className="btn btn-secondary btn-sm"> Link <i className="fas fa-link"></i></button>
+                                        ) : (
+                                            <a href={item.url}>
+                                                <button type="button" className="btn btn-secondary btn-sm"> Link <i className="fas fa-link"></i></button>
 
-                                        </a>
+                                            </a>
+                                        )}
+
 
                                     </div>
                                 </div>
